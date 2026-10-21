@@ -203,7 +203,7 @@
       </button></li>
       <li><button class="chain__btn" type="button" data-filter="process" aria-pressed="false">
         <span class="chain__name">Process</span>
-        <span class="chain__desc">Retinal encoders, convolutional nets, FPGA video pipelines.</span>
+        <span class="chain__desc">Retinal encoders, convolutional nets, FPGA video pipelines, simulation file readers.</span>
       </button></li>
       <li><button class="chain__btn" type="button" data-filter="actuate" aria-pressed="false">
         <span class="chain__name">Actuate</span>
@@ -211,7 +211,7 @@
       </button></li>
       <li><button class="chain__btn" type="button" data-filter="verify" aria-pressed="false">
         <span class="chain__name">Verify</span>
-        <span class="chain__desc">Ethics-approved trials, LTspice sweeps, bench repeatability, live demos.</span>
+        <span class="chain__desc">Ethics-approved trials, LTspice sweeps, bench repeatability, simulation benchmarks, live demos.</span>
       </button></li>
     </ul>
     <p class="chain__status" data-chain-status hidden>
@@ -269,6 +269,15 @@
         <h3>Traffic Sign Recognition</h3>
         <p>Custom CNN trained on a balanced 60,000+ image set across 43 classes, then lifted with AlexNet transfer learning.</p>
         <p class="card__metric"><b>98.7%</b> validation accuracy, up from 97.1%</p>
+      </article>
+
+      <article class="card" data-chain="process verify">
+        <img data-zoom class="card__img" src="assets/img/swingbus-plotter.jpg" width="1200" height="737" loading="lazy" decoding="async" alt="The Swingbus Grid Plotter comparing a simulated and a measured 0.5 pu voltage dip: voltage and reactive power plots with simulation solid and measurement dashed, cursors A and B, and an Inspector panel of min, max and mean per signal.">
+        <p class="card__tags"><span class="tag">Process / Verify</span><span class="year">2026</span></p>
+        <h3>Swingbus, Power-System Benchmarking</h3>
+        <p>An offline alternative to Enerplot for benchmarking simulations against field measurements. PSCAD and PSS&reg;E result files are read straight from their binary formats, reverse-engineered without vendor libraries, beside a Grid Calculator for SMIB test set-up.</p>
+        <p class="card__metric"><b>1 GB</b> recording, 14.5 million rows, opened in about 18 s</p>
+        <p class="card__link"><a href="https://swingbus-present.vercel.app/">See the showcase</a></p>
       </article>
 
       <article class="card" data-chain="process verify">
